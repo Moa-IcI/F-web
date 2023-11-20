@@ -106,14 +106,14 @@ try:
 	while True:
 		print(banner)
 		print(credit)
-		print(Fore.RED+"1. Website Domain\n2. IP Addresse\n3. Exit"+Fore.RESET)
+		print(Fore.RED+"1. Website Domain\n2. IP Address\n3. Exit"+Fore.RESET)
 		opt=str(input(Fore.GREEN+"\nEnter Your choice: "+Fore.RESET))
 		if opt=='1':
 			domain=str(input(Fore.CYAN+"Enter The Website (eg:google.com):"+Fore.RESET))
 			ip=socket.gethostbyname(domain)
 			break
 		elif opt=='2':
-			ip = input(Fore.CYAN+"IP Addresse  : "+Fore.RESET)
+			ip = input(Fore.CYAN+"IP Address  : "+Fore.RESET)
 			break
 		elif opt=='3':
 			time.sleep(1)
